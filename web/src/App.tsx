@@ -1,7 +1,7 @@
-import { MagnifyingGlassPlus } from 'phosphor-react';
 import { useEffect, useState } from 'react';
-import { CreateAdBanner } from './components/CreateAdBanner';
 
+import { CreateAdBanner } from './components/CreateAdBanner';
+import { CreateAdDialog } from './components/CreateAdDialog';
 import { GameBanner } from './components/GameBanner';
 
 type Game = {
@@ -45,7 +45,7 @@ function App() {
         ))}
       </div>
 
-      <CreateAdBanner />
+      <CreateAdDialog />
     </div>
   );
 }
